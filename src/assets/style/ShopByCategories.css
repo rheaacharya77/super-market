@@ -1,0 +1,77 @@
+.category-item {
+    border-radius: 7px;
+    border: 1px solid white;
+  }
+  .category-item:hover {
+    border: 1px solid #ffcc00;
+  }
+  
+  .category-link:hover {
+    cursor: pointer;
+  }
+
+  .category-img :hover {
+    cursor: pointer;
+  }
+  
+  .description {
+    position: absolute;
+    width: 400px;
+    margin-left: 30px;
+  }
+  
+  .category-title {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+  
+  .category-link {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 1;
+    display: inline-block;
+    transition: transform 0.5s ease;
+  }
+  
+  .category-link:hover {
+    color: #ffcc00;
+  }
+  
+  .category-arrow {
+    margin-left: 10px;
+  }
+  
+  .productCount {
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 1;
+    display: block;
+    margin-bottom: -16px;
+  }
+
+  .category-section {
+    margin-top: 5rem;
+  }
+  .category-header {
+    font-size: 24px;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 15 px;
+  }
+
+  .category-desciption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+    margin-top: 10 px;
+  }
+
+  .category-sectiontitle {
+    margin-bottom: 30px;
+  }
