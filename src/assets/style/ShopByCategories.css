@@ -75,3 +75,9 @@
   .category-sectiontitle {
     margin-bottom: 30px;
   }
+
+  .category-header h2{
+  color: #414142;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif
+  }

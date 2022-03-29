@@ -1,53 +1,83 @@
-.ban-bottom-w3l {
-  padding: 5em 0;
+
+
+@media (max-width: 991px)
+{.about__list__wrapper {
+    margin-top: 30px;
 }
-.ban-bottom1 {
-  float: left;
-  width: 48%;
-  margin-right: 2%;
-}
-.ban-bottom2 {
-  float: left;
-  width: 48%;
-  margin-left: 2%;
 }
 
-.ban-img {
-  margin-top: 2.1em;
+@media (max-width: 1399px){
+  .about__list__wrapper .about__list {
+    margin-bottom: 3px;
+    margin-top: 20px;
+}
 }
 
-.ban-wrap {
-  position: relative;
-  overflow: hidden;
-}
-.ban-wrap img {
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  width: 100%;
-}
-.ban-wrap:hover img {
-  -moz-transform: scale3d(1.1, 1.1, 1);
-  -o-transform: scale3d(1.1, 1.1, 1);
-  -ms-transform: scale3d(1.1, 1.1, 1);
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1);
+.about__list__wrapper .about__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    margin-top: 20px;
 }
 
-@media (max-width: 320px) {
-  .ban-bottom-w3l {
-    padding: 2em 0;
-  }
-}
-@media (max-width: 768px) {
-  .ban-bottom-w3l {
-    padding: 3em 0;
-  }
+.about__list__wrapper .about__list .list__contents {
+  max-width: 553px;
+  margin-left: 38px;
+  color: #666;
+line-height: 24px;
 }
 
-@media (max-width: 991px) {
-  .ban-bottom3 {
-    margin: 2em 0;
-  }
+@media (max-width: 1536px){
+  .about__list__wrapper .about__list .list__contents h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+}
+
+@media (max-width: 767px){
+  .about__list__wrapper .about__list .list__contents h4 {
+    font-size: 20px;
+}
+}
+
+@media (max-width: 991px){
+  .about__list__wrapper .about__list .list__contents h4 {
+    font-size: 22px;
+}
+
+.about__list__wrapper .about__list .list__contents h4 {
+    font-size: 26px;
+    margin-bottom: 9px;
+}
+}
+.about__list__wrapper .about__list .list__contents h4 {
+    color: #414142;
+    margin-bottom: 15px;
+}
+@media (max-width: 1536px){
+  .about__list__wrapper .about__list .list__contents p {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 1536px){
+  .landing__page__section .section__header {
+    margin-bottom: 55px;
+}
+}
+
+@media (max-width: 1399px){
+  .landing__page__section .section__header {
+    margin-bottom: 60px;
+}
+.landing__page__section .section__header {
+    text-align: center;
+    margin-bottom: 95px;
+}
+}
+
+ .section__header h3 {
+  color: #414142;
+  font-size: 28px;
+  text-align: center;
 }
