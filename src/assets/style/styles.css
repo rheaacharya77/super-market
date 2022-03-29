@@ -100,3 +100,36 @@ button.btn.btn-default.search:hover{
   color: #ee4238;
   transform: translateX(10px);
 }
+
+.w3ls_logo_products_left1 ul.phone_icon li{
+    display:inline-block;
+    color:#212121;
+    }
+@media(max-width:991px){
+  ul.phone_icon li {
+    font-size: 13px;
+  }
+  ul.phone_email li {
+    font-size: 13px;
+  }
+}
+
+.w3ls_logo_products_left {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+  align-items: center;
+  margin-top: 10px;
+  }
+
+  .w3ls_logo_products_left1 {
+    float: left;
+    margin-top: 20px;
+    width: 33.33%;
+}
+
+.w3l_search {
+  float: right;
+  width: 25.33%;
+  margin-top: 10px;
+}
