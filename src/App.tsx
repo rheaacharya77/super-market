@@ -20,6 +20,7 @@ import Dallemomos from './pages/Dallemomos';
 import Signatures from './pages/Signatures';
 import Frozenitems from './pages/Frozenitems';
 import Riceandnoodles from './pages/Riceandnoodles';
+import Help from './pages/Help';
 
 
 
@@ -34,6 +35,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path ="/register" element ={<Signup/>}/>
+      <Route path="/contact" element={<Help/>}/>
       <Route path="/signatures" element={<Signatures/>} />
       <Route path="/snacks" element={<Snacks/>} />
       <Route path="/dallemomos" element={<Dallemomos/>} />
