@@ -10,13 +10,19 @@ import Footer from './components/Footer/Footer';
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 //pages
-import Home from './pages/Home';
-import Signatures from './pages/Signatures';
-import Snacks from './pages/Snacks';
-import Dallemomos from './pages/Dallemomos';
-import Frozenitems from './pages/Frozenitems';
 import Momo from './pages/Momo';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Snacks from './pages/Snacks';
 import Signature from './pages/Signature';
+import Dallemomos from './pages/Dallemomos';
+import Signatures from './pages/Signatures';
+import Frozenitems from './pages/Frozenitems';
+import Riceandnoodles from './pages/Riceandnoodles';
+
+
+
 
 
 function App() {
@@ -26,10 +32,13 @@ function App() {
       <Navbar/> 
       <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path ="/register" element ={<Signup/>}/>
       <Route path="/signatures" element={<Signatures/>} />
       <Route path="/snacks" element={<Snacks/>} />
       <Route path="/dallemomos" element={<Dallemomos/>} />
       <Route path="/frozenitems" element={<Frozenitems/>} />
+      <Route path="/riceandnoodles" element={<Riceandnoodles/>}/>
       <Route path="/momo" element={<Momo/>} />
       <Route path="/signature" element={<Signature/>} />
       </Routes> 

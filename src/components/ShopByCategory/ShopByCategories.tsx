@@ -10,7 +10,7 @@ const warehouseId = '1';
 
 const ShopByCategory = () => {
     const [displaycategory, setDisplayCategory] = useState<any[]>([]);
-    const [loading,setLoaading] = useState(false);
+    const [loading,setLoading] = useState(false);
     
     const getCategory = async() => {
             let response = await fetch(`${baseURL}/api/v4/category`, {
@@ -23,7 +23,7 @@ const ShopByCategory = () => {
             const newData = await response.json();
             console.log(newData.data)
             setDisplayCategory(newData.data);
-            setLoaading(false);
+            setLoading(false);
            
     }
     useEffect(() => {
