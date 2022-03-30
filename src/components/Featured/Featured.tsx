@@ -45,7 +45,7 @@ if(loading){
 		<h3>FEATURED</h3>
 		<div className="agile_top_brands_grids">
 		<Row>
-         {products.slice(10,19).map(product => {
+         {products && products.slice(24,28).map(product => {
 			 
                 return(
 					<div className="col-md-3 top_brand_left" key={product.id}>
@@ -80,11 +80,3 @@ if(loading){
 );
 }
 export default Featured;
-
-
-
-
-
-
-
-

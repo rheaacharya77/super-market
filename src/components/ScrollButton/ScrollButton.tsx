@@ -1,39 +1,34 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from 'react';
 import '../../assets/style/ScrollButton.css';
+import arrow from '../../assets/images/arrow.png';
 
 const ScrollButton = () => {
-  const [visible, setVisible] = useState(false);
-
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 320) {
-      setVisible(true);
-    } else if (scrolled <= 320) {
-      setVisible(false);
-    }
-  };
-
-  const scrollToTop = () => {
+  const [showTop, setShowTop] = useState(false);
+  
+    const ShowArrow = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 320) {
+        setShowTop(true);
+      } else {
+        setShowTop(false);
+      }
+    };
+    window.addEventListener('scroll', ShowArrow);
+  
+    
+ 
+  const goToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
 
-  window.addEventListener('scroll', toggleVisible);
-
   return (
     <div className="scroll-up-button">
-      <FontAwesomeIcon
-        icon={faArrowCircleUp}
-        onClick={scrollToTop}
-        size="lg"
-        style={{ display: visible ? 'inline' : 'none' }}
-      />
+       <img src={arrow} alt="" onClick={goToTop}   style={{ display: showTop ? 'inline' : 'none' }}/>
     </div>
   );
-};
+}
 
 export default ScrollButton;
