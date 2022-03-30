@@ -15,6 +15,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Snacks from './pages/Snacks';
+import Product from './pages/Product';
 import Signature from './pages/Signature';
 import Dallemomos from './pages/Dallemomos';
 import Signatures from './pages/Signatures';
@@ -33,6 +34,7 @@ function App() {
       <Navbar/> 
       <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/products" element={<Product/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path ="/register" element ={<Signup/>}/>
       <Route path="/contact" element={<Help/>}/>
