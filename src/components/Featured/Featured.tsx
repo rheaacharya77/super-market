@@ -42,7 +42,7 @@ if(loading){
   return (
 	<div className="newproducts-w3agile">
 	<Container>
-		<h3>FEATURED</h3>
+		<h3>NEW OFFERS</h3>
 		<div className="agile_top_brands_grids">
 		<Row>
          {products && products.slice(24,28).map(product => {
