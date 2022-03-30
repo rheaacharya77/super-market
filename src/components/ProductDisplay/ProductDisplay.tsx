@@ -73,29 +73,29 @@ const ProductDisplay = (categoryid:any) => {
           <Row>
              {productsbycategory && productsbycategory.slice(10,19).map((product:any) => (
                     <div className="col-md-4 top_brand_left" key={product.id}>
-                    <Card style={{ width: '18rem' }}>
+                    <div className="hover14 column">
                     <Card.Img variant="top" src={product.images[0].imageName} height="300px"/>
                       <Card.Body className="text-center">
-                      <Card.Title>
-                      {product?.title}
-                      </Card.Title>
-                      <Card.Text>
-                      <h5>
-                      NRs.{product.unitPrice[0].sellingPrice}
-                      </h5>
-                      </Card.Text>
-                      <Button className="add-to-cart-button">
-                        Add to cart
-                      </Button>
-                      </Card.Body>
-                      </Card>
+                      <Card.Title><h4>{product.title}</h4> </Card.Title>
+                        <div className="stars">
+                          <i className="fa fa-star blue-star" aria-hidden="true"></i>
+                          <i className="fa fa-star blue-star" aria-hidden="true"></i>
+                          <i className="fa fa-star blue-star" aria-hidden="true"></i>
+                          <i className="fa fa-star blue-star" aria-hidden="true"></i>
+                          <i className="fa fa-star gray-star" aria-hidden="true"></i>
+                        </div>
+                          <Card.Text><h4>NRS.{product.unitPrice[0].sellingPrice}</h4></Card.Text>
+                          <div className="snipcart-details top_brand_home_details">
+                          <input type="submit" name="submit" value="Add to cart" className="button-cart" />
+                        </div>
+                        </Card.Body>
+                        </div>
           </div>
              ) )} 
       </Row>
       <div className='clearfix'></div>
     </div>
-  </div>    
-    
+  </div>  
   );
 }
 
