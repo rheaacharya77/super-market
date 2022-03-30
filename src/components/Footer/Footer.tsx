@@ -7,7 +7,7 @@ import { faMapMarker, faEnvelope, faPhone, faArrowRight } from '@fortawesome/fre
 
 
 import '../../assets/style/Footer.css';
-function Footer(){
+const Footer = () => {
    return(
 	<>
 	<div className="footer">
@@ -18,16 +18,16 @@ function Footer(){
 			  <h3>Contact</h3>
 			  <ul className="address">
 				<li>
-				  <FontAwesomeIcon icon={faMapMarker} className="address" />
+				  <FontAwesomeIcon icon={faMapMarker} className="address-icon" />
 				  1234k Avenue, 4th block, <span><span>New York City.</span></span>
 				</li>
 				<li>
-				  <FontAwesomeIcon icon={faEnvelope} className="address" />
+				  <FontAwesomeIcon icon={faEnvelope} className="address-icon" />
 
 				  <Link to="mailto:info@example.com">info@example.com</Link>
 				</li>
 				<li>
-				  <FontAwesomeIcon icon={faPhone} className="address" />
+				  <FontAwesomeIcon icon={faPhone} className="address-icon" />
 				  +1234 567 567
 				</li>
 			  </ul>
