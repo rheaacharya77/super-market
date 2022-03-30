@@ -89,7 +89,7 @@ const ProductDisplay = (categoryid:any) => {
                       </Button>
                       </Card.Body>
                       </Card>
-                      </div>
+          </div>
              ) )} 
       </Row>
       <div className='clearfix'></div>

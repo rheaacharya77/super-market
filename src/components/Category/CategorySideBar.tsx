@@ -30,12 +30,6 @@ const CategoriesSideBar =() => {
             </Link>
             </li>
             <li>
-            <Link to ='/dallemomos'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Dalle Momos
-            </Link>
-            </li>
-            <li>
             <Link to ='/riceandnoodles'>
             <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
             Rice and Noodles
@@ -44,7 +38,7 @@ const CategoriesSideBar =() => {
             <li>
             <Link to ='/frozenitems'>
             <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Rice and Noodles
+            Frozen Items
             </Link>
             </li>
             <li>
