@@ -53,7 +53,7 @@ if(loading){
 				
                     <Card.Img variant="top"src={product.images[0].imageName}/>
 					<Card.Body className="text-center">
-                     <Card.Title>{product.title} </Card.Title>
+                     <Card.Title><h4>{product.title}</h4> </Card.Title>
 								<div className="stars">
 								  <i className="fa fa-star blue-star" aria-hidden="true"></i>
 								  <i className="fa fa-star blue-star" aria-hidden="true"></i>

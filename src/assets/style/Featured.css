@@ -285,6 +285,14 @@
             color: #ffcc00;
         }
 
+        .card-title h4 {
+          margin-bottom: 0.5rem;
+          font-size: small;
+      }
+       .card-text .p .h4{
+         font-size: small;
+       }
+
 
           
 
