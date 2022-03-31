@@ -10,8 +10,10 @@ import Footer from './components/Footer/Footer';
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 //pages
+import Faq from './pages/Faq';
 import Momo from './pages/Momo';
 import Home from './pages/Home';
+import Help from './pages/Help';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Snacks from './pages/Snacks';
@@ -21,7 +23,7 @@ import Dallemomos from './pages/Dallemomos';
 import Signatures from './pages/Signatures';
 import Frozenitems from './pages/Frozenitems';
 import Riceandnoodles from './pages/Riceandnoodles';
-import Help from './pages/Help';
+
 
 
 
@@ -45,6 +47,7 @@ function App() {
       <Route path="/riceandnoodles" element={<Riceandnoodles/>}/>
       <Route path="/momo" element={<Momo/>} />
       <Route path="/signature" element={<Signature/>} />
+      <Route path="/faqs" element ={<Faq/>}/>
       </Routes> 
       <Footer/>
       </Router>
