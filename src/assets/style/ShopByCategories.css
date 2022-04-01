@@ -1,11 +1,10 @@
-
-a{
-color: #414142;
-text-decoration: none;
+a {
+  color: #414142;
+  text-decoration: none;
 }
-link{
-  color:#414142;
-  text-decoration: none;;
+link {
+  color: #414142;
+  text-decoration: none;
 }
 .category-item {
   border-radius: 7px;
@@ -85,8 +84,8 @@ link{
   margin-bottom: 30px;
 }
 
-.category-header h2{
-color: #414142;
-font-size: 40px;
-font-family: 'Raleway', sans-serif
+.category-header h2 {
+  color: #414142;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
 }

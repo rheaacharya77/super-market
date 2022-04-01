@@ -1,17 +1,18 @@
-.slider-h3{
-    font-size: 40px;
-    font-weight:200;
-    padding: 130px;
+.slider-h3 {
+  font-size: 40px;
+  font-weight: 200;
+  padding: 130px;
 }
 
-.slider-p{
-    font-size: 25px;
-    font-style: italic;
+.slider-p {
+  font-size: 25px;
+  font-style: italic;
 }
 
-.d-block w-100
-{object-fit :"cover"}
+.d-block w-100 {
+  object-fit: "cover";
+}
 
-.overflow{
-    overflow: hidden;
-  }
+.overflow {
+  overflow: hidden;
+}

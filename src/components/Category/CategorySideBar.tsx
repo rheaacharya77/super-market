@@ -1,101 +1,66 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const CategoriesSideBar =() => {
+const CategoriesSideBar = () => {
   return (
     <>
       <div col-md-3 className="products-left">
         <div className="categories">
           <h2>Categories</h2>
-          <ul className='cate'>
+          <ul className="cate">
             <li>
-            <Link to ='/signatures'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Signatures
-            </Link>
+              <Link to="/signatures">
+                <FontAwesomeIcon icon={faArrowRight} className="faArrowRight" />
+                Signatures
+              </Link>
             </li>
             <li>
-            <Link to ='/snacks'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Snacks
-            </Link>
+              <Link to="/snacks">
+                <FontAwesomeIcon icon={faArrowRight} className="faArrowRight" />
+                Snacks
+              </Link>
             </li>
             <li>
-            <Link to ='/dallemomos'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Dalle Momos
-            </Link>
+              <Link to="/dallemomos">
+                <FontAwesomeIcon icon={faArrowRight} className="faArrowRight" />
+                Dalle Momos
+              </Link>
             </li>
             <li>
-            <Link to ='/riceandnoodles'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Rice and Noodles
-            </Link>
+              <Link to="/riceandnoodles">
+                <FontAwesomeIcon icon={faArrowRight} className="faArrowRight" />
+                Rice and Noodles
+              </Link>
             </li>
             <li>
-            <Link to ='/frozenitems'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Frozen Items
-            </Link>
+              <Link to="/frozenitems">
+                <FontAwesomeIcon icon={faArrowRight} className="faArrowRight" />
+                Frozen Items
+              </Link>
             </li>
             <li>
-            <Link to ='/momo'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Momo
-            </Link>
+              <Link to="/momo">
+                <FontAwesomeIcon icon={faArrowRight} className="faArrowRight" />
+                Momo
+              </Link>
             </li>
             <li>
-            <Link to ='/signature'>
-            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight"/>
-            Signature
-            </Link>
+              <Link to="/signature">
+                <FontAwesomeIcon icon={faArrowRight} className="faArrowRight" />
+                Signature
+              </Link>
             </li>
           </ul>
-        </div> 
+        </div>
       </div>
     </>
   );
-}
+};
 
 export default CategoriesSideBar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState,useEffect } from 'react';
 // import { Col} from 'react-bootstrap';
@@ -109,7 +74,7 @@ export default CategoriesSideBar;
 
 // const CategoriesSideBar = () => {
 //     const [categories, setCategories] = useState<any[]>([]);
-    
+
 //     const  getCategories = async() => {
 //         const response = await fetch(
 //             `${baseURL}/api/v4/category`,
@@ -128,13 +93,13 @@ export default CategoriesSideBar;
 //     useEffect(() => {
 //         getCategories();
 //       },[]);
-      
+
 //     return (
 //         <Col md={3} className="products-left">
 //         <div className="categories">
 //             <h2>Categories</h2>
 //             <ul className="cat">
-                
+
 //                        {categories.map((category) => {
 //                             return (
 //                                 <li>
@@ -151,9 +116,8 @@ export default CategoriesSideBar;
 //                 }
 //             </ul>
 //                  </div>
-//                  </Col> 
-      
-       
+//                  </Col>
+
 //     );
 // };
 

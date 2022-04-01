@@ -1,4 +1,4 @@
-.cart1{
+.cart1 {
   color: #77777a;
   font-size: 17px;
   margin-top: 10px;
@@ -38,14 +38,13 @@
   margin-right: 1rem;
 }
 
-.boalogo{
+.boalogo {
   width: 80px;
   height: 80px;
 }
 
-.left1{
+.left1 {
   float: left;
-
 }
 
 .navbar-nav {
@@ -55,19 +54,19 @@
 }
 
 .w3ls_logo_products_left h1 a {
-font-size: 40px;
-color: #fe9126;
-text-decoration: none;
-text-transform: uppercase;
-display: block;
-line-height: 1;
-align-items: center;
-text-align: center;
+  font-size: 40px;
+  color: #fe9126;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  line-height: 1;
+  align-items: center;
+  text-align: center;
 }
 
 .w3l_offers p a {
-color: #fe9126;
-text-decoration: none;
+  color: #fe9126;
+  text-decoration: none;
 }
 
 button.btn.btn-default.search {
@@ -78,37 +77,33 @@ button.btn.btn-default.search {
   border: none;
 }
 
-button.btn.btn-default.search:hover{
-background: #ee4238;
-padding: 9px 12px 9px;
-float: right;
-outline: none;
-border: none;
+button.btn.btn-default.search:hover {
+  background: #ee4238;
+  padding: 9px 12px 9px;
+  float: right;
+  outline: none;
+  border: none;
 }
 
-
-
-
-
-.w3ls_logo_products_left1 ul.phone_icon li{
-  display:inline-block;
-  color:#212121;
+.w3ls_logo_products_left1 ul.phone_icon li {
+  display: inline-block;
+  color: #212121;
+}
+@media (max-width: 991px) {
+  ul.phone_icon li {
+    font-size: 13px;
   }
-@media(max-width:991px){
-ul.phone_icon li {
-  font-size: 13px;
-}
-ul.phone_email li {
-  font-size: 13px;
-}
+  ul.phone_email li {
+    font-size: 13px;
+  }
 }
 
 .w3ls_logo_products_left {
-float: left;
-text-align: center;
-width: 33.33%;
-align-items: center;
-margin-top: 10px;
+  float: left;
+  text-align: center;
+  width: 33.33%;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .w3ls_logo_products_left1 {
@@ -118,11 +113,11 @@ margin-top: 10px;
 }
 
 .w3l_search {
-float: right;
-width: 25.33%;
-margin-top: 10px;
+  float: right;
+  width: 25.33%;
+  margin-top: 10px;
 }
 
-.bg-category-header{
+.bg-category-header {
   background-color: #ee4238;
 }

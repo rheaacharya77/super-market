@@ -1,12 +1,12 @@
-import React from 'react';
-import ProductContainer from '../components/Product/ProductContainer';
+import React from "react";
+import ProductContainer from "../components/Product/ProductContainer";
 
 const Product = () => {
-    return(
-        <>
-        <ProductContainer/>
-        </>
-    );
-}
+  return (
+    <>
+      <ProductContainer />
+    </>
+  );
+};
 
 export default Product;
