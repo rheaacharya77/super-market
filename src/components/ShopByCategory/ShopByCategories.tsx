@@ -45,10 +45,10 @@ const ShopByCategory = () => {
                             <h2 className="category-header">SHOP BY CATEGORY</h2>
                           </div>
                           <div className="row">
-                          {displaycategory && displaycategory.map(categories => {
+                          {displaycategory && displaycategory.map(category=> {
                             return(
-                              <div className="col-lg-4 p-3" key={categories.id}>
-                              <CategoryCard categories={categories} />
+                              <div className="col-lg-4 p-3" key={category.id}>
+                              <CategoryCard categories={category} />
                             </div>
                             
                             )

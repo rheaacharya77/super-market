@@ -3,7 +3,7 @@ import CategoryContainer from '../components/Category/CategoryContainer';
 const Frozenitems = () => {
     return(
         <>
-        <CategoryContainer/>
+        <CategoryContainer categoryid={11}/>
         </>
     );
 }

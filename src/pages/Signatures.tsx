@@ -4,7 +4,7 @@ import CategoryContainer from '../components/Category/CategoryContainer';
 const Signatures = () => {
     return(
         <>
-        <CategoryContainer/>
+        <CategoryContainer categoryid = {6}/>
         </>
     );
 }

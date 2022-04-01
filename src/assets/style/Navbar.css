@@ -1,0 +1,128 @@
+.cart1{
+  color: #77777a;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.search {
+  color: white;
+  font-size: 17px;
+}
+
+.phone {
+  margin-right: 10px;
+}
+
+.w3_footer_grid ul.address li .address {
+  color: #fe9126;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fe9126;
+  padding: 8px;
+  margin-right: 10px;
+}
+.arrow-right {
+  color: #fe9126;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.starBlue {
+  color: hsl(200, 60%, 50%);
+}
+
+.starGray {
+  color: #808080;
+}
+
+.contact-card {
+  margin-right: 1rem;
+}
+
+.boalogo{
+  width: 80px;
+  height: 80px;
+}
+
+.left1{
+  float: left;
+
+}
+
+.navbar-nav {
+  float: left;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.w3ls_logo_products_left h1 a {
+font-size: 40px;
+color: #fe9126;
+text-decoration: none;
+text-transform: uppercase;
+display: block;
+line-height: 1;
+align-items: center;
+text-align: center;
+}
+
+.w3l_offers p a {
+color: #fe9126;
+text-decoration: none;
+}
+
+button.btn.btn-default.search {
+  background: #fe9126;
+  padding: 9px 12px 9px;
+  float: right;
+  outline: none;
+  border: none;
+}
+
+button.btn.btn-default.search:hover{
+background: #ee4238;
+padding: 9px 12px 9px;
+float: right;
+outline: none;
+border: none;
+}
+
+
+
+
+
+.w3ls_logo_products_left1 ul.phone_icon li{
+  display:inline-block;
+  color:#212121;
+  }
+@media(max-width:991px){
+ul.phone_icon li {
+  font-size: 13px;
+}
+ul.phone_email li {
+  font-size: 13px;
+}
+}
+
+.w3ls_logo_products_left {
+float: left;
+text-align: center;
+width: 33.33%;
+align-items: center;
+margin-top: 10px;
+}
+
+.w3ls_logo_products_left1 {
+  float: left;
+  margin-top: 20px;
+  width: 33.33%;
+}
+
+.w3l_search {
+float: right;
+width: 25.33%;
+margin-top: 10px;
+}
+
+.bg-category-header{
+  background-color: #ee4238;
+}

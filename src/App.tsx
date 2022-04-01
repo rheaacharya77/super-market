@@ -40,13 +40,13 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path ="/register" element ={<Signup/>}/>
       <Route path="/contact" element={<Help/>}/>
-      <Route path="/signatures" element={<Signatures/>} />
+      <Route path="/signatures" element={<Signatures/>} /> 
       <Route path="/snacks" element={<Snacks/>} />
       <Route path="/dallemomos" element={<Dallemomos/>} />
       <Route path="/frozenitems" element={<Frozenitems/>} />
       <Route path="/riceandnoodles" element={<Riceandnoodles/>}/>
       <Route path="/momo" element={<Momo/>} />
-      <Route path="/signature" element={<Signature/>} />
+      <Route path="/signature" element={<Signature/>} /> 
       <Route path="/faqs" element ={<Faq/>}/>
       </Routes> 
       <Footer/>

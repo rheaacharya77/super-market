@@ -1,9 +1,18 @@
+
+a{
+color: #414142;
+text-decoration: none;
+}
+link{
+  color:#414142;
+  text-decoration: none;;
+}
 .category-item {
   border-radius: 7px;
   border: 1px solid white;
 }
 .category-item:hover {
-  border: 1px solid #ffcc00;
+  border: 1px solid #fe9126;
 }
 
 .category-link:hover {
@@ -34,11 +43,10 @@
   text-transform: capitalize;
   line-height: 1;
   display: inline-block;
-  transition: transform 0.5s ease;
 }
 
 .category-link:hover {
-  color: #ffcc00;
+  color: #fe9126;
 }
 
 .category-arrow {

@@ -4,7 +4,7 @@ import CategoryContainer from '../components/Category/CategoryContainer';
 const Momo = () => {
     return(
         <>
-        <CategoryContainer/>
+        <CategoryContainer categoryid={2}/>
         </>
     );
 }

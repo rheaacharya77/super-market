@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-import '../../assets/style/CategoryNav.css';
+import '../../assets/style/Navbar.css';
 
 const CategoryHeader = () => {
   return (

@@ -4,7 +4,7 @@ import CategorySideBar from '../Category/CategorySideBar';
 import Products from '../Product/Product';
 
 
-const ProductContainer= ((categoryid:any) => {
+const ProductContainer= (() => {
   return (
     <>
       <div className="products">
@@ -14,7 +14,7 @@ const ProductContainer= ((categoryid:any) => {
             <CategorySideBar/>
             </div>
             <div className="col-lg-8 col-md-12">
-              <Products categoryid = {categoryid} key = {categoryid.id}/> 
+              <Products/> 
             </div>
           </div>
         </div>

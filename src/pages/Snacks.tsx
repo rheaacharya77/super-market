@@ -4,7 +4,7 @@ import CategoryContainer from '../components/Category/CategoryContainer';
 const Snacks = () => {
     return(
         <>
-        <CategoryContainer/>
+        <CategoryContainer categoryid={4}/>
         </>
     );
 }

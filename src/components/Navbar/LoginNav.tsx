@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {Container} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartArrowDown} from '@fortawesome/free-solid-svg-icons';
-
+import '../../assets/style/Navbar.css';
 const LoginNav = () => {
 return(
     <div className="agileits_header">

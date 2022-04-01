@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch,faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
 
-import '../../assets/style/styles.css';
+import '../../assets/style/Navbar.css';
 
 const SearchNav = () => {
   return (

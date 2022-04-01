@@ -1,12 +1,13 @@
 import React from 'react';
+
 import CategorySideBar from './CategorySideBar';
 
-import ProductDisplay from '../ProductDisplay/ProductDisplay';
+import CategoryDisplay from './CategoryDisplay';
 
 
-const CategoryContainer= ((categoryid:any) => {
+const CategoryContainer= ({categoryid}:any) => {
   return (
-    <>
+ 
       <div className="products">
         <div className="container">
           <div className="row">
@@ -14,14 +15,13 @@ const CategoryContainer= ((categoryid:any) => {
             <CategorySideBar/>
             </div>
             <div className="col-lg-8 col-md-12">
-              <ProductDisplay categoryid = {categoryid} key = {categoryid.id}/> 
+              <CategoryDisplay categoryid = {categoryid}/> 
             </div>
           </div>
         </div>
       </div>
-    </>
   );
 }
-)
+
 
 export default CategoryContainer;
