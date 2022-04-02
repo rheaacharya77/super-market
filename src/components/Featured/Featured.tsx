@@ -48,7 +48,7 @@ const Featured = () => {
             {products &&
               products.map((product) => {
                 return (
-                  <div className="col-md-3 top_brand_left" key={product.id}>
+                  <div className="col-xl-3 top_brand_left" key={product.id}>
                     <ProductsCard products={product} />
                   </div>
                 );

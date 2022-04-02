@@ -41,7 +41,7 @@ const Products = () => {
   return (
     <div className="newproducts-w3agile">
       <Container>
-        <div className="products-right">
+        <div className="col-md-8 products-right">
           <div className="products-right-grid">
             <div className="products-right-grids">
               <div className="sorting">
@@ -68,7 +68,7 @@ const Products = () => {
               {products &&
                 products.map((product) => {
                   return (
-                    <div className="col-md-3 top_brand_left" key={product.id}>
+                    <div className="col-md-4 top_brand_left" key={product.id}>
                       <ProductsCard products={product} />
                     </div>
                   );

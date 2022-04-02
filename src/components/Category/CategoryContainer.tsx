@@ -9,10 +9,10 @@ const CategoryContainer = ({ categoryid }: any) => {
     <div className="products">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-12">
+          <div className="col-md-4 products-left">
             <CategorySideBar />
           </div>
-          <div className="col-lg-8 col-md-12">
+          <div className="col-md-8 products-right">
             <Category categoryid={categoryid} />
           </div>
         </div>

@@ -8,8 +8,8 @@ const ProductsCard = ({ products }: any) => {
    //console.log(products);
 
   return (
-    <div className=" top_brand_left" key={id}>
-    <div className="hover14 column">
+
+    <div className="hover14 column" key={id}>
       <div className="agile_top_brand_left_grid"> 
         {hasOffer && (
           <div className="agile_top_brand_left_grid_pos">
@@ -44,7 +44,7 @@ const ProductsCard = ({ products }: any) => {
         </div>
       </div>
      </div>
-     </div>
+     
   );
 };
 
