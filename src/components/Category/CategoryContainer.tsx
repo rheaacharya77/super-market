@@ -2,7 +2,7 @@ import React from "react";
 
 import CategorySideBar from "./CategorySideBar";
 
-import CategoryDisplay from "./CategoryDisplay";
+import Category from "./Category";
 
 const CategoryContainer = ({ categoryid }: any) => {
   return (
@@ -13,7 +13,7 @@ const CategoryContainer = ({ categoryid }: any) => {
             <CategorySideBar />
           </div>
           <div className="col-lg-8 col-md-12">
-            <CategoryDisplay categoryid={categoryid} />
+            <Category categoryid={categoryid} />
           </div>
         </div>
       </div>
