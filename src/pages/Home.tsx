@@ -4,7 +4,7 @@ import CarouselTop from "../components/Carousel/CarouselTop";
 import ShopByCategory from "../components/ShopByCategory/ShopByCategories";
 import ImageLayout from "../components/ImageLayout/ImageLayout";
 import Featured from "../components/Featured/Featured";
-// import CarouselBottom from "../components/Carousel/CarouselBottom";
+
 
 function Home() {
   return (
@@ -12,7 +12,6 @@ function Home() {
       <CarouselTop />
       <ShopByCategory />
       <ImageLayout />
-      {/* <CarouselBottom/> */}
       <Featured />
     </>
   );

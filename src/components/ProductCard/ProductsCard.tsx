@@ -1,14 +1,19 @@
 import React from "react";
-// import offer from "../../assets/images/offer.png";
-import "../../assets/style/Featured.css";
+import "../../assets/style/ProductsCard.css";
 import offer from "../../assets/images/offer.png";
 
-const ProductCard = ({ products }: any) => {
+const ProductsCard = ({ products }: any) => {
+  const { title, unitPrice,hasOffer, images,id } = products;
+  const [{ markedPrice }] = unitPrice;
+  const [{ imageName }] = images;
+   //console.log(products);
+
   return (
+    <div className=" top_brand_left" key={id}>
     <div className="hover14 column">
       <div className="agile_top_brand_left_grid"> 
-        {products.hasOffer && (
-          <div className="polaroid">
+        {hasOffer && (
+          <div className="agile_top_brand_left_grid_pos">
             <img src={offer} alt="" className="img-responsive" />
           </div>
         )}
@@ -16,8 +21,8 @@ const ProductCard = ({ products }: any) => {
           <figure>
             <div className="snipcart-item block">
               <div className="snipcart-thumb">
-                 <img src={products.images[0].imageName} alt="" width="100%" />
-                <p>{products.title}</p>
+                 <img src={imageName} alt="" width="100%" />
+                <p>{title}</p>
                 <div className="stars">
                   <i className="fa fa-star blue-star" aria-hidden="true"></i>
                   <i className="fa fa-star blue-star" aria-hidden="true"></i>
@@ -25,7 +30,7 @@ const ProductCard = ({ products }: any) => {
                   <i className="fa fa-star blue-star" aria-hidden="true"></i>
                   <i className="fa fa-star gray-star" aria-hidden="true"></i>
                 </div>
-                <h4>Nrs.{products.unitPrice[0].sellingPrice}</h4>
+                <h4>Nrs.{markedPrice}</h4>
               </div>
               <div className="snipcart-details top_brand_home_details">
                 <input
@@ -40,7 +45,8 @@ const ProductCard = ({ products }: any) => {
         </div>
       </div>
      </div>
+     </div>
   );
 };
 
-export default ProductCard;
+export default ProductsCard;

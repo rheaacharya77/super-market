@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 //import {Link} from 'react-router-dom';
 import { Container, Row, Spinner } from "react-bootstrap";
-import ProductCard from "./ProductCard";
-import "../../assets/style/Featured.css";
+import ProductsCard from "../ProductCard/ProductsCard";
+import "../../assets/style/ProductsCard.css";
 
-import "../../assets/style/Featured.css";
+
 const baseURL = "https://uat.ordering-dalle.ekbana.net/";
 const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
 const warehouseId = "1";
@@ -49,7 +49,7 @@ const Featured = () => {
               products.map((product) => {
                 return (
                   <div className="col-md-3 top_brand_left" key={product.id}>
-                    <ProductCard products={product} />
+                    <ProductsCard products={product} />
                   </div>
                 );
               })}
