@@ -4,8 +4,7 @@ import offer from "../../assets/images/offer.png";
 
 const ProductsCard = ({ products }: any) => {
   const { title, unitPrice,hasOffer, images,id } = products;
-  const [{ markedPrice }] = unitPrice;
-  const [{ imageName }] = images;
+  
    //console.log(products);
 
   return (
@@ -21,7 +20,7 @@ const ProductsCard = ({ products }: any) => {
           <figure>
             <div className="snipcart-item block">
               <div className="snipcart-thumb">
-                 <img src={imageName} alt="" width="100%" />
+                 <img src={images[0].imageName} alt="" width="100%" />
                 <p>{title}</p>
                 <div className="stars">
                   <i className="fa fa-star blue-star" aria-hidden="true"></i>
@@ -30,7 +29,7 @@ const ProductsCard = ({ products }: any) => {
                   <i className="fa fa-star blue-star" aria-hidden="true"></i>
                   <i className="fa fa-star gray-star" aria-hidden="true"></i>
                 </div>
-                <h4>Nrs.{markedPrice}</h4>
+                <h4>Nrs.{unitPrice[0].markedPrice}</h4>
               </div>
               <div className="snipcart-details top_brand_home_details">
                 <input
