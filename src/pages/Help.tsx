@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {Row} from "react-bootstrap";
 import "../assets/style/Help.css";
-
+import BreadCrumbs from "../components/BreadCrumbs/BreadCrumbs";
 const Help = () => {
+  <BreadCrumbs previous="Home" current="Create Account" />
   return (
     <div className="about">
       <div className="w3_agileits_contact_grids">

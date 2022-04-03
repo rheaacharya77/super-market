@@ -9,7 +9,7 @@ function CarouselTop() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require("../../assets/images/layout1.jpg")}
+          src={require("../../assets/images/dallecover2.jpeg")}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -20,7 +20,7 @@ function CarouselTop() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require("../../assets/images/layout2.jpg")}
+          src={require("../../assets/images/dallecover3.jpg")}
           alt="Second slide"
         />
 

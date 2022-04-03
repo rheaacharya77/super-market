@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import BreadCrumbs from "../components/BreadCrumbs/BreadCrumbs";
 const Signup = () => {
+  <BreadCrumbs previous="Home" current="Create Account" />
   return (
     <div className="register">
       <div className="container">
