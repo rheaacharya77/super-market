@@ -17,56 +17,56 @@ const CategoryHeader = () => {
                 to="/"
                 className="nav-link"
               >
-                HOME
+                Home
               </Link>
               <Link
                 to="/signatures"
                 className="nav-link"
               >
-                SIGNATURES
+                Signatures
               </Link>
               <Link
                 to="/snacks"
                 className="nav-link"
               >
-                SNACKS
+                Snacks
               </Link>
               <Link
                 to="/dallemomos"
                 className="nav-link"
               >
-                DALLE MOMOS
+                Dalle Momos
               </Link>
               <Link
                 to="/riceandnoodles"
                 className="nav-link"
               >
-                RICE AND NOODLES
+                Rice and Noodles
               </Link>
               <Link
                 to="/frozenitems"
                 className=" nav-link"
               >
-                FROZEN ITEMS
+                Frozen Items
               </Link>
               <Link
                 to="/momo"
                 className=" nav-link"
               >
-                MOMO
+                Momo
               </Link>
               <Link
                 to="/signature"
                 className=" nav-link"
               >
-                SIGNATURE
+                Signature
               </Link>
               {/* <Link to="/offer" className="text-white text-decoration-none px-3 nav-link">
                 Offers
-              </Link>
+              </Link>*/}
               <Link to="/contact" className="text-white text-decoration-none nav-link">
                 Contact
-              </Link> */}
+              </Link> 
             </Nav>
           </Navbar.Collapse>
       </Navbar>

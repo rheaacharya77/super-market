@@ -15,7 +15,7 @@ const SearchNav = () => {
           <div className="w3ls_logo_products_left1">
             <ul className="phone_icon">
               <li>
-                <FontAwesomeIcon icon={faPhoneAlt} className="phoneIcon" />
+                <FontAwesomeIcon icon={faPhoneAlt} className="phoneIcon" /> 
                 Order online or call us : (+0123) 234 567
               </li>
             </ul>

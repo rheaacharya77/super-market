@@ -15,11 +15,11 @@ const LoginNav = () => {
         </div>
         <div className="agile-login">
           <ul>
-            <li>
-              <Link to="/login"> LOGIN </Link>
+          <li>
+              <Link to="/register">CREATE ACCOUNT</Link>
             </li>
             <li>
-              <Link to="/register">SIGN UP</Link>
+              <Link to="/login"> LOGIN </Link>
             </li>
             <li>
               <Link to="/contact">HELP</Link>

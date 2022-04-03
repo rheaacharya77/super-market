@@ -2,6 +2,9 @@
 .navbar-light .navbar-nav .nav-link{
 background-color: transparent;
 color: #fff !important;
+font-weight: 500;
+margin-left: 20px;
+
 }
 .agile-login ul li {
   display: inline-block;
@@ -23,10 +26,19 @@ ul li, ol li {
 .w3l_search {
   float: right;
   width: 25.33%;
+  margin-top: 5px;
 }
-
-.phone {
+ul{
+  text-decoration: none;
+}
+.phoneIcon {
   margin-right: 10px;
+}
+.phoneIcon li {
+  font-weight: 200;
+}
+.phoneIcon li p {
+  font-size: 20px;
 }
 .nav-link{
   color:#fff;
@@ -300,7 +312,7 @@ button.w3view-cart {
   }
 }
 .logo_products {
-  padding: 2em 0;
+  padding: 18px 0px;
 }
 
 @media (max-width: 991px) {
@@ -313,6 +325,10 @@ button.w3view-cart {
   float: left;
   margin-top: 0.6em;
   width: 33.33%;
+  padding-top: 6px;
+}
+.w3ls_logo_products_left1 ul {
+list-style: none;
 }
 @media (max-width: 667px) {
   .w3ls_logo_products_left {
@@ -461,7 +477,7 @@ summary {
   display: block;
 }
 .w3ls_logo_products_left a {
-  font-weight: 100;
+  font-weight: 600;
 }
 @media (max-width: 767px) {
   .navbar-default {
@@ -582,22 +598,26 @@ ol li {
   line-height: 1;
   align-items: center;
   text-align: center;
+  margin-top: 7px;
 }
 
 .w3l_offers p a {
   color: #fe9126;
   text-decoration: none;
 }
-
+.navbar-nav .nav-link > li > a {
+  color: #fff;
+  font-weight: 500;
+}
 
 button.btn.btn-default.search:hover {
   background: #333;
 }
 
-.w3ls_logo_products_left1 ul.phone_icon li {
+.w3ls_logo_products_left1 ul.phoneIcon li p {
   display: inline-block;
   color: #212121;
-  font-weight: 300;
+  font-size: 10px;
 }
 @media (max-width: 991px) {
   ul.phone_icon li {
