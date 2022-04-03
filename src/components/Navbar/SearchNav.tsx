@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { Form } from "react-bootstrap";
 
 import "../../assets/style/Navbar.css";
 
@@ -25,7 +26,7 @@ const SearchNav = () => {
             </h1>
           </div>
           <div className="w3l_search">
-            <form action="#">
+            <Form action="#">
               <input
                 type="search"
                 name="Search"
@@ -38,10 +39,8 @@ const SearchNav = () => {
               >
                 <FontAwesomeIcon icon={faSearch} className="search" />
               </button>
-              <div className="clearfix"></div>
-            </form>
+            </Form>
           </div>
-
           <div className="clearfix"> </div>
         </Container>
       </div>
