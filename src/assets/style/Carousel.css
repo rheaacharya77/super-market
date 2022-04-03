@@ -2,6 +2,7 @@
   font-size: 40px;
   font-weight: 200;
   padding: 130px;
+  font-style:italic ;
 }
 
 .slider-p {
@@ -15,4 +16,23 @@
 
 .overflow {
   overflow: hidden;
+}
+.text-left {
+  text-align: left!important;
+}
+.slider-animated-1 h1 {
+  animation-delay: 1.3s;
+  animation-name: fadeInUp;
+}
+.animated1 {
+  margin-bottom: 180px;
+  font-weight: 600;
+  font-size: 45px;
+  font-family: Lobster,cursive;
+  line-height: 1;
+  font-style: italic;
+}
+.slider-animated-1 .animated1{
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
