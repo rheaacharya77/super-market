@@ -1,22 +1,23 @@
 import React from "react";
-
+import {Row,Container} from "react-bootstrap";
 import CategorySideBar from "./CategorySideBar";
-
+import "../../assets/style/Product.css";
 import Category from "./Category";
 
 const CategoryContainer = ({ categoryid }: any) => {
   return (
     <div className="products">
-      <div className="container">
-        <div className="row">
+      <Container>
+       <Row>
           <div className="col-md-4 products-left">
             <CategorySideBar />
           </div>
           <div className="col-md-8 products-right">
             <Category categoryid={categoryid} />
           </div>
-        </div>
-      </div>
+          <div className="clearfix"></div>
+       </Row>
+      </Container>
     </div>
   );
 };

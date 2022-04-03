@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import {Link} from 'react-router-dom';
 import { Container, Row, Spinner } from "react-bootstrap";
-import ProductsCard from "../ProductCard/ProductsCard";
+import FeaturedCard from "./FeaturedCard";
 import "../../assets/style/ProductsCard.css";
 
 
@@ -45,11 +45,11 @@ const Featured = () => {
         <h3>NEW OFFERS</h3>
         <div className="agile_top_brands_grids">
           <Row>
-            {products &&
+          {products &&
               products.map((product) => {
                 return (
-                  <div className="col-xl-3 top_brand_left" key={product.id}>
-                    <ProductsCard products={product} />
+                  <div className="col-md-3 top_brand_left-1" key={product.id}>
+                    <FeaturedCard products={product} />
                   </div>
                 );
               })}

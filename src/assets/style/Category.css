@@ -1,122 +1,41 @@
-.products {
-    padding: 5em 0;
+
+@media (max-width: 991px)
+{
+    .products-left {
+    padding: 0;
+    margin-bottom: 24px;
 }
-.sorting{
-	float:right;
-	width: 35%;
 }
-.sorting-left{
-	float: right;
-    margin-right: 2em;
-    width: 25%;
+.categories, .new-products {
+    border: 1px solid #999;
 }
-select#country,select#country1 {
-    border: 1px solid #212121;
-    outline: none;
-    font-size: 14px;
-    color: #212121;
-    padding: 0.5em;
-    width: 100%;
-	cursor: pointer;
-}
-.products-right-grids{
-	margin-bottom: 2em;
-}
-.numbering{
-	text-align:right;
-}
-ul.paging {
-    margin: 4em auto 0;
-}
-.paging > .active > a,.paging > .active > a:hover {
-    background-color:#ffc229;
-    border-color:#EDB62B;
-}
-.pagination > li > a{
-	color:#212121;
-}
-.categories,.new-products{
-	border:1px solid #999;
-}
-.categories h2{
-	font-size: 1.5em;
+.categories h2 {
+    font-size: 1.5em;
     color: #212121;
     margin: 0;
-    padding: .5em;
+    padding: 0.5em;
     background: #f5f5f5;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
 }
-.filter-price h3{
-	background:none;
+h1, h2, h3, h4, h5, h6, a ,link{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
 }
-.categories ul.cate,.new-products-grids{
-	padding:2em;
+.col-md-8{
+    position:relative;
+    min-height:1px;
 }
-.categories ul li{
-	display:block;
-	color:#999;
-	font-size:14px;
-	margin-bottom:1em;
+.categories ul li a {
+    color: #999;
+    text-decoration: none;
 }
-.categories ul li a{
-	color:#999;
-	text-decoration:none;
+link{
+    color: #999;
 }
-.categories ul li a:hover{
-	color:#3399cc;
-}
-.categories ul li span{
-	float:right;
-}
-ul.cate ul{
-	margin-left:2em;
-}
-ul.dropdown-menu1 li{
-	display:block;
-	font-size:14px;
-}
-ul.dropdown-menu1 li a{
-	color:#212121;
-	text-decoration:none;
-}
-input#amount {
-    outline: none;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-}
-.new-products-grid-left{
-	float:left;
-	width:35%;
-}
-.new-products-grid-right{
-	float:right;
-	width:60%;
-}
-@media (max-width: 768px){
-.products {
-    padding: 3em 0;
-}
-}
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.col-md-4 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.categories, .new-products {
-    border: 1px solid #999;
-}
-.faArrowRight {
-    color: #fe9126;
-    margin-right: 10px;
+.fa-arrow-right{
+    color:#fe9126;
+    
 }

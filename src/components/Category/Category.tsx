@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Row, Spinner, Container, Form } from "react-bootstrap";
 import ProductsCard from "../ProductCard/ProductsCard";
+import "../../assets/style/Product.css";
 const baseURL = "https://uat.ordering-dalle.ekbana.net/";
 const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
 const warehouseId = "1";
@@ -46,9 +47,7 @@ const CategoryDisplay = ({ categoryid }: Props) => {
 
   console.log(productsbycategory);
   return (
-    <div className="newproducts-w3agile">
-      <Container>
-        <div className="products-right">
+   <>
           <div className="products-right-grid">
             <div className="products-right-grids">
               <div className="sorting">
@@ -75,7 +74,7 @@ const CategoryDisplay = ({ categoryid }: Props) => {
               {productsbycategory &&
                 productsbycategory.map((product: any) => {
                   return (
-                    <div className="col-md-3 top_brand_left" key={product.id}>
+                    <div className="col-md-4 top_brand_left" key={product.id}>
                       <ProductsCard products={product} />
                     </div>
                   );
@@ -83,9 +82,7 @@ const CategoryDisplay = ({ categoryid }: Props) => {
             </Row>
             <div className="clearfix"></div>
           </div>
-        </div>
-      </Container>
-    </div>
+</>
   );
 };
 

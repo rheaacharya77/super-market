@@ -1,24 +1,24 @@
 import React from "react";
+import {Row,Container} from "react-bootstrap";
 import CategorySideBar from "../Category/CategorySideBar";
-
-import Products from "../Product/Product";
+import "../../assets/style/Product.css";
+import Products from "./Product";
 
 const ProductContainer = () => {
   return (
-    <>
       <div className="products">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-12">
+        <Container>
+        <Row>
+            <div className="col-md-4 products-left">
               <CategorySideBar />
             </div>
-            <div className="col-lg-8 col-md-12">
+            <div className="col-md-8 products-right">
               <Products />
             </div>
-          </div>
+            <div className="clearfix"></div>
+          </Row>
+        </Container>
         </div>
-      </div>
-    </>
   );
 };
 
