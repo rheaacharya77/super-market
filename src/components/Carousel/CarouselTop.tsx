@@ -3,7 +3,7 @@ import { Carousel,Container} from "react-bootstrap";
 
 import "../../assets/style/Carousel.css";
 
-function CarouselTop() {
+const CarouselTop = () => {
   return (
     <Carousel fade>
       <Carousel.Item interval={1400}>
@@ -15,7 +15,7 @@ function CarouselTop() {
         <Container>
         <div >
         <Carousel.Caption>
-        <h1 className="animated1">No matter what the question, Dalle is the answer</h1>
+        <h1 className="animated1">Tantalise your palate with our delicious food</h1>
         </Carousel.Caption>
 
         </div>

@@ -1,14 +1,13 @@
 import React from "react";
+
 import "../../assets/style/ProductsCard.css";
 import offer from "../../assets/images/offer.png";
 
-const ProductsCard = ({ products }: any) => {
+
+const ProductsCard = ({products }: any) => {
   const { title, unitPrice,hasOffer, images,id } = products;
-  
    //console.log(products);
-
   return (
-
     <div className="hover14 column" key={id}>
       <div className="agile_top_brand_left_grid"> 
         {hasOffer && (

@@ -68,9 +68,9 @@ function FaqContainer() {
     <div className="faq-w3agile">
       <div className="container">
         <h2 className="w3_agile_header">Frequently asked questions(FAQ)</h2>
-        <Accordion flush>
+        <Accordion defaultActiveKey="0" flush>
           {Questions.map((question) => (
-            <Accordion.Item eventKey={question.toString()}>
+            <Accordion.Item eventKey={question.question.toString()}>
               <Accordion.Header as={Nav.Link}>
                 {question.question}
               </Accordion.Header>

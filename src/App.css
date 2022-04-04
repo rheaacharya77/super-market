@@ -3000,3 +3000,13 @@ h3.agileits-icons-title {
     font-size: 13px;
   }
 }
+.login-form-grids input[type="number"], .login-form-grids input[type="password"], .login-form-grids input[type="text"] {
+  outline: none;
+  border: 1px solid #dbdbdb;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+  color: #999;
+  display: block;
+  width: 100%;
+  margin-top:10px;
+}

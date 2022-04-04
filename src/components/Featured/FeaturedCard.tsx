@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../../assets/style/ProductsCard.css";
 import offer from "../../assets/images/offer.png";
 

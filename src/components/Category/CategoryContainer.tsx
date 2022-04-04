@@ -1,8 +1,10 @@
 import React from "react";
+import Category from "./Category";
 import {Row,Container} from "react-bootstrap";
 import CategorySideBar from "./CategorySideBar";
+
 import "../../assets/style/Product.css";
-import Category from "./Category";
+
 
 const CategoryContainer = ({ categoryid }: any) => {
   return (

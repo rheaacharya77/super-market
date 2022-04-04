@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+
 import "../../assets/style/ScrollButton.css";
 import arrow from "../../assets/images/arrow.png";
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import {Link} from 'react-router-dom';
 import { Container, Row, Spinner } from "react-bootstrap";
+
 import FeaturedCard from "./FeaturedCard";
 import "../../assets/style/ProductsCard.css";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import CategoryContainer from "../components/Category/CategoryContainer";
 import BreadCrumbs from "../components/BreadCrumbs/BreadCrumbs";
+import CategoryContainer from "../components/Category/CategoryContainer";
 const RiceandNoodles = () => {
   return (
     <>

@@ -1,7 +1,8 @@
 import React from "react";
 import "../../assets/style/ImageLayout.css";
 import { Container, Row } from "react-bootstrap";
-function ImageLayout() {
+
+const ImageLayout = () => {
   return (
     <>
       <div className="section__header">

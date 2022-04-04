@@ -1,9 +1,10 @@
 import React from "react";
-
-import CarouselTop from "../components/Carousel/CarouselTop";
-import ShopByCategory from "../components/ShopByCategory/ShopByCategories";
-import ImageLayout from "../components/ImageLayout/ImageLayout";
 import Featured from "../components/Featured/Featured";
+import CarouselTop from "../components/Carousel/CarouselTop";
+import ImageLayout from "../components/ImageLayout/ImageLayout";
+import ShopByCategory from "../components/ShopByCategory/ShopByCategories";
+
+
 
 
 function Home() {

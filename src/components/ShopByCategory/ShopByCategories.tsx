@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CategoryCard from "./CategoryCard";
 import { Spinner } from "react-bootstrap";
+
 import "../../assets/style/ShopByCategories.css";
 
 const baseURL = "https://uat.ordering-dalle.ekbana.net/";

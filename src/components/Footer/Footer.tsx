@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "../../assets/style/Footer.css";
+
 function Footer() {
   return (
     <>
