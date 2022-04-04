@@ -4,7 +4,7 @@ import "../../assets/style/ProductsCard.css";
 import offer from "../../assets/images/offer.png";
 
 const FeaturedCard = ({ products }: any) => {
-  const { title, unitPrice,hasOffer, images,id } = products;
+  const { title, unitPrice, images,id } = products;
   
    //console.log(products);
 
@@ -12,11 +12,11 @@ const FeaturedCard = ({ products }: any) => {
 
     <div className="hover14 column" key={id}>
       <div className="agile_top_brand_left_grid"> 
-        {hasOffer && (
+      
           <div className="agile_top_brand_left_grid_pos">
             <img src={offer} alt="" className="img-responsive" />
           </div>
-        )}
+      
         <div className="agile_top_brand_left_grid1">
           <figure>
             <div className="snipcart-item block">

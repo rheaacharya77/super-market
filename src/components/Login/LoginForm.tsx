@@ -67,6 +67,9 @@ setError(newData.errors[0].message);
             className="login-form-grids animated wow slideInUp"
             data-wow-delay=".5s"
           >
+            <div className="text-danger mb-3 text-center ">{message}</div>
+            <div className="text-danger text-center">{error}</div>
+
             <Form>
               <input type="email" 
               placeholder="Email"
