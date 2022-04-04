@@ -162,3 +162,16 @@
 .register-home a:hover{
 	background:#fe9126;
 }
+.text-success {
+text-transform: capitalize;
+color: rgb(19, 214, 19);
+font-size: 15px;
+font-weight: bold;
+}
+
+.text-danger {
+    text-transform: capitalize;
+    color:rgb(214, 54, 54);
+    font-size:15px;
+    font-weight:bold;
+}

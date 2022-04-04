@@ -64,7 +64,7 @@ const SignUpForm = () => {
       <div className="container">
         <h2>Register Here</h2>
         <div className="login-form-grids">
-        <div className="text-danger mb-3 text-center">{message}</div>
+        <div className="text-success mb-3 text-center">{message}</div>
         <div className="text-danger text-center">{error}</div>
      
    

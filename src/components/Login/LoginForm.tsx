@@ -47,7 +47,7 @@ let newData = await response.json();
 console.log(newData);
 
 if(response.status === 200){
-setMessage('Login Successful');
+setMessage('Login Successful!');
 localStorage.setItem('accessToken',newData.access_token);
 }else{
 setError(newData.errors[0].message);
@@ -67,7 +67,7 @@ setError(newData.errors[0].message);
             className="login-form-grids animated wow slideInUp"
             data-wow-delay=".5s"
           >
-            <div className="text-danger mb-3 text-center ">{message}</div>
+            <div className="text-success mb-3 text-center ">{message}</div>
             <div className="text-danger text-center">{error}</div>
 
             <Form>
