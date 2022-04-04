@@ -1,5 +1,5 @@
 import React from "react";
-import SignUp from "../components/SignUp/SignUp";
+import SignUpForm from "../components/SignUp/SignUpForm";
 import BreadCrumbs from "../components/BreadCrumbs/BreadCrumbs";
 
 const Signup = () => {
@@ -7,7 +7,7 @@ const Signup = () => {
   return (
     <>
     <BreadCrumbs previous="Home" current="Create Account" />
-    <SignUp/> 
+    <SignUpForm/> 
     </>
   );
 };
