@@ -41,7 +41,7 @@ const CategoryDisplay = ({ categoryid }: Props) => {
     } catch (err) {
       console.log(err);
     }
-  }, []);
+  },);
 
   // console.log(productsbycategory);
 
