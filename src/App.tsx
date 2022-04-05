@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
+import ForgotPassword from "./components/Login/ForgotPassword";
 
 
 import Faq from "./pages/Faq";
@@ -24,6 +25,7 @@ import Dallemomos from "./pages/Dallemomos";
 import Signatures from "./pages/Signatures";
 import Frozenitems from "./pages/Frozenitems";
 import Riceandnoodles from "./pages/Riceandnoodles";
+
 
 function App() {
   return (
@@ -45,6 +47,7 @@ function App() {
           <Route path="/momo" element={<Momo />} />
           <Route path="/signature" element={<Signature />} />
           <Route path="/faqs" element={<Faq />} />
+          <Route path="/forgotpassword" element={<ForgotPassword/>}/>
         </Routes>
         <Footer />
       </Router>

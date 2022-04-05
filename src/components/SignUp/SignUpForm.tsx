@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Form } from "react-bootstrap";
+import { useNavigate } from 'react-router';
 
 
 import "../../assets/style/Login.css";
@@ -19,6 +20,7 @@ const SignUpForm = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
   const [error,setError] = useState("");
+  const navigate = useNavigate();
 
   const submitHandler = async (e: any) => {
     e.preventDefault();
@@ -46,6 +48,8 @@ const SignUpForm = () => {
 
     if(response.status === 201) {
     setMessage('Successfully Registered');
+    alert("Successfully Registered");
+    navigate('/login');
     }
     else{
        setError(newData.errors[0].message);
