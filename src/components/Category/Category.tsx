@@ -57,9 +57,10 @@ const CategoryDisplay = ({ categoryid }: Props) => {
       <div className="sorting">
         <Form.Select className="frm-field required sect">
           <option value="null">Default sorting</option>
-          <option value="null">Sort by popularity</option>
-          <option value="null">Sort by average rating</option>
-          <option value="null">Sort by price</option>
+          <option value="sortAsc">Sort by Alphabetical Order(A-Z)</option>
+          <option value="sortDesc">Sort by Alphabetical Order(Z-A)</option>
+          <option value="sortAsc">Sort by price(High-Low)</option>
+          <option value="sortDesc">Sort by price(Low-High)</option>
         </Form.Select>
       </div>
       <div className="sorting-left">
