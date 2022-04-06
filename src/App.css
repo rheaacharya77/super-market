@@ -1021,7 +1021,7 @@ select#country1 {
   margin-bottom: 2em;
 }
 .numbering {
-  text-align: right;
+  margin-left: 600px;
 }
 ul.paging {
   margin: 4em auto 0;

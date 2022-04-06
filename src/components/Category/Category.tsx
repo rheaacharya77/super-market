@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Row, Spinner,Form} from "react-bootstrap";
 import ProductsCard from "../ProductCard/ProductsCard";
-
+import {ProductInterface} from "../../types/products";
 import "../../assets/style/Product.css";
-
+import Pagination from "../Pagination/Pagination";
 const baseURL = "https://uat.ordering-dalle.ekbana.net/";
 const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
 const warehouseId = "1";
@@ -14,8 +14,11 @@ interface Props {
 
 
 const CategoryDisplay = ({ categoryid }: Props) => {
-  const [productsbycategory, setProductsByCategory] = useState<any[]>([]);
+  const [productsbycategory, setProductsByCategory] = useState<ProductInterface[]>([]);
   const [loading, setLoading] = useState(true);
+  //pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(6);
 
   const getProducts = async () => {
     let response: any = await fetch(
@@ -41,15 +44,20 @@ const CategoryDisplay = ({ categoryid }: Props) => {
     } catch (err) {
       console.log(err);
     }
-  },);
+  },[]);
 
-  // console.log(productsbycategory);
-
+  console.log(productsbycategory);
   if (loading) {
     return <Spinner animation={"border"} />;
   }
+   // Get current posts
+   const indexOfLastPost = currentPage * postsPerPage;
+   const indexOfFirstPost = indexOfLastPost - postsPerPage;
+     // Change page
+  const paginate = (pageNumber: any) => {
+    setCurrentPage(pageNumber);
+  };
 
-  console.log(productsbycategory);
   return (
    <>
     <div className="products-right-grid">
@@ -77,7 +85,7 @@ const CategoryDisplay = ({ categoryid }: Props) => {
           <div className="agile_top_brands_grids">
             <Row>
               {productsbycategory &&
-                productsbycategory.map((product: any) => {
+                productsbycategory.slice(indexOfFirstPost,indexOfLastPost).map((product: any) => {
                   return (
                     <div className="col-md-4 top_brand_left" key={product.id}>
                       <ProductsCard products={product} />
@@ -85,6 +93,11 @@ const CategoryDisplay = ({ categoryid }: Props) => {
                   );
                 })}
             </Row>
+            <Pagination
+                    postsPerPage={postsPerPage}
+                    totalPosts={productsbycategory.length}
+                    paginate={paginate}
+                  />
             <div className="clearfix"></div>
           </div>
 </>

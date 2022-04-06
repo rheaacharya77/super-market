@@ -64,14 +64,14 @@ function Footer() {
 
                     <Link to="/contact">Contact Us</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="arrow-right"
                     />
 
                     <Link to="/contact">Short Codes</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <FontAwesomeIcon
                       icon={faArrowRight}

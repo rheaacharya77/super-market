@@ -4,6 +4,7 @@ import "../../assets/style/ProductsCard.css";
 import offer from "../../assets/images/offer.png";
 
 
+
 const ProductsCard = ({products }: any) => {
   const { title, unitPrice,hasOffer, images,id } = products;
    //console.log(products);
