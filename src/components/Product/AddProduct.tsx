@@ -5,7 +5,7 @@ import offer from "../../assets/images/offer.png";
 const baseURL = "https://uat.ordering-dalle.ekbana.net";
 const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
 const warehouseId = "1";
-const accessToken = localStorage.getItem("accessToken");
+const access_token = localStorage.getItem("accessToken");
 
 const AddProduct = ({ products }: any) => {
   const { title, unitPrice, hasOffer, images, id } = products;
@@ -21,11 +21,11 @@ const AddProduct = ({ products }: any) => {
         quantity: 1,
         note: "test",
       };
-      if (accessToken) {
+      if (access_token) {
         let response = await fetch(`${baseURL}/api/v4/cart-product`, {
           method: "POST",
           headers: {
-            "Authorization": accessToken,
+            Authorization: `Bearer ${access_token}`,
             "Warehouse-Id": warehouseId,
             "Api-key": apiKey,
             "Content-Type": "application/json",

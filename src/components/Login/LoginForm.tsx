@@ -42,13 +42,13 @@ const LoginForm = () => {
       });
 
       let newData = await response.json();
-      console.log(newData);
+      console.log(newData.data);
 
       if (response.status === 200) {
         setMessage("Login Successful!");
         alert("Login Successful");
         navigate('/');
-        localStorage.setItem("accessToken", "access_token");
+        localStorage.setItem("accessToken", newData.data.access_token);
       } else {
         setError(newData.errors[0].message);
       }
