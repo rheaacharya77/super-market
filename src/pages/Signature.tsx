@@ -1,12 +1,12 @@
 import React from "react";
 import BreadCrumbs from "../components/BreadCrumbs/BreadCrumbs";
-import CategoryContainer from "../components/Category/CategoryContainer";
+import Category from "../components/Category/Category";
 
 const Signature = () => {
   return (
     <>
      <BreadCrumbs previous="Home" current="Signature" />
-      <CategoryContainer categoryid={134} />
+      <Category categoryid={134} />
     </>
   );
 };

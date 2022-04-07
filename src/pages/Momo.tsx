@@ -1,11 +1,11 @@
 import React from "react";
 import BreadCrumbs from "../components/BreadCrumbs/BreadCrumbs";
-import CategoryContainer from "../components/Category/CategoryContainer";
+import Category from "../components/Category/Category";
 const Momo = () => {
   return (
     <>
      <BreadCrumbs previous="Home" current="Momo" />
-      <CategoryContainer categoryid={133} />
+      <Category categoryid={133} />
     </>
   );
 };

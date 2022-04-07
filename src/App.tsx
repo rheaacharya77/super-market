@@ -19,12 +19,15 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Snacks from "./pages/Snacks";
 import Aboutus from "./pages/AboutUs";
-import Product from "./pages/Product";
+import Products from "./pages/Product";
 import Signature from "./pages/Signature";
 import Dallemomos from "./pages/Dallemomos";
 import Signatures from "./pages/Signatures";
 import Frozenitems from "./pages/Frozenitems";
 import Riceandnoodles from "./pages/Riceandnoodles";
+
+
+
 
 
 function App() {
@@ -34,7 +37,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Product />} />
+          <Route path="/products" element={<Products/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Signup />} />
           <Route path="/contact" element={<Help />} />

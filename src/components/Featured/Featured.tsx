@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 //import {Link} from 'react-router-dom';
 import { Container, Row, Spinner } from "react-bootstrap";
-
-import FeaturedCard from "./FeaturedCard";
+import { ProductInterface } from "../../types/products";
+import AddProduct from "../Product/AddProduct";
 import "../../assets/style/ProductsCard.css";
 
 
@@ -11,11 +11,11 @@ const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
 const warehouseId = "1";
 
 const Featured = () => {
-  const [products, setProducts] = useState<any[]>([]);
+  const [products, setProducts] = useState<ProductInterface[]>([]);
   const [loading, setLoading] = useState(true);
 
   const getData = async () => {
-    const response = await fetch(`${baseURL}/api/v4/product?categoryId=2`, {
+    const response = await fetch(`${baseURL}/api/v4/product`, {
       method: "GET",
       headers: {
         "api-key": apiKey,
@@ -46,11 +46,10 @@ const Featured = () => {
         <h3>NEW OFFERS</h3>
         <div className="agile_top_brands_grids">
           <Row>
-          {products &&
-              products.map((product) => {
+             {products && products.slice(9,13).map((product:any) => {
                 return (
                   <div className="col-md-3 top_brand_left-1" key={product.id}>
-                    <FeaturedCard products={product} />
+                    <AddProduct products={product} key={product.id} />
                   </div>
                 );
               })}

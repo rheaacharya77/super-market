@@ -1,12 +1,12 @@
 import React from "react";
 import BreadCrumbs from "../components/BreadCrumbs/BreadCrumbs";
-import CategoryContainer from "../components/Category/CategoryContainer";
+import Category from "../components/Category/Category";
 
 const Frozenitems = () => {
   return (
     <>
      <BreadCrumbs previous="Home" current="Frozen Items" />
-      <CategoryContainer categoryid={11} />
+      <Category categoryid={11} />
     </>
   );
 };

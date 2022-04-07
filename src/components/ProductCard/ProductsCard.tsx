@@ -1,50 +1,72 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Row, Form } from "react-bootstrap";
+import AddProduct from "../Product/AddProduct";
+import Pagination from "../Pagination/Pagination";
 
-import "../../assets/style/ProductsCard.css";
-import offer from "../../assets/images/offer.png";
+const ProductsCard = ({ products }: any) => {
+  //pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(9);
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  // const currentPosts = products.slice(indexOfFirstPost, indexOfLastPost);
 
+  // Change page
+  const paginate = (pageNumber: any) => {
+    setCurrentPage(pageNumber);
+  };
 
-
-const ProductsCard = ({products }: any) => {
-  const { title, unitPrice,hasOffer, images,id } = products;
-   //console.log(products);
   return (
-    <div className="hover14 column" key={id}>
-      <div className="agile_top_brand_left_grid"> 
-        {hasOffer && (
-          <div className="agile_top_brand_left_grid_pos">
-            <img src={offer} alt="" className="img-responsive" />
+    <>
+      <div className="products-right-grid">
+        <div className="products-right-grids">
+          <div className="sorting">
+            <Form>
+              <select className="frm-field required sect">
+                <option value="null">Default sorting</option>
+                <option value="sortAsc">Sort by Alphabetical Order(A-Z)</option>
+                <option value="sortDesc">
+                  Sort by Alphabetical Order(Z-A)
+                </option>
+                <option value="priceAsc">Sort by price(High-Low)</option>
+                <option value="priceDesc">Sort by price(Low-High)</option>
+              </select>
+            </Form>
           </div>
-        )}
-        <div className="agile_top_brand_left_grid1">
-          <figure>
-            <div className="snipcart-item block">
-              <div className="snipcart-thumb">
-                 <img src={images[0].imageName} alt="" width="100%" />
-                <p>{title}</p>
-                <div className="stars">
-                  <i className="fa fa-star blue-star" aria-hidden="true"></i>
-                  <i className="fa fa-star blue-star" aria-hidden="true"></i>
-                  <i className="fa fa-star blue-star" aria-hidden="true"></i>
-                  <i className="fa fa-star blue-star" aria-hidden="true"></i>
-                  <i className="fa fa-star gray-star" aria-hidden="true"></i>
-                </div>
-                <h4>Nrs.{unitPrice[0].markedPrice}</h4>
-              </div>
-              <div className="snipcart-details top_brand_home_details">
-                <input
-                  type="submit"
-                  name="submit"
-                  value="Add to cart"
-                  className="button"
-                ></input>
-              </div>
-            </div>
-          </figure>
+          <div className="sorting-left">
+            <Form>
+              <select className="frm-field required sect">
+                <option value="null">Item on page 9</option>
+                <option value="null">Item on page 18</option>
+                <option value="null">Item on page 32</option>
+                <option value="null">All</option>
+              </select>
+            </Form>
+          </div>
+          <div className="clearfix"> </div>
         </div>
       </div>
-     </div>
-     
+      <div className="agile_top_brands_grids">
+        <Row>
+          {products &&
+            products
+              .slice(indexOfFirstPost, indexOfLastPost)
+              .map((product: any) => {
+                return (
+                  <div className="col-md-4 top_brand_left" key={product.id}>
+                    <AddProduct products={product} key={product.id} />
+                  </div>
+                );
+              })}
+        </Row>
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={products.length}
+          paginate={paginate}
+        />
+        <div className="clearfix"> </div>
+      </div>
+    </>
   );
 };
 

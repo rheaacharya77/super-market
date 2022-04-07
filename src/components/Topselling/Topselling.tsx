@@ -4,7 +4,7 @@ import "../../assets/style/Topselling.css";
 function Topselling() {
   return (
     <>
-      <div className="top-brands">
+      {/* <div className="top-brands">
         <div className="container">
           <h2>Top selling offers</h2>
           <div className="grid_3 grid_5">
@@ -1429,7 +1429,7 @@ function Topselling() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
