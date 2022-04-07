@@ -48,7 +48,7 @@ const LoginForm = () => {
         setMessage("Login Successful!");
         alert("Login Successful");
         navigate('/');
-        localStorage.setItem("accessToken", newData.access_token);
+        localStorage.setItem("accessToken", "access_token");
       } else {
         setError(newData.errors[0].message);
       }
