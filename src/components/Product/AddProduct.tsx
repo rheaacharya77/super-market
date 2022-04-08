@@ -5,7 +5,7 @@ import offer from "../../assets/images/offer.png";
 const baseURL = "https://uat.ordering-dalle.ekbana.net";
 const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
 const warehouseId = "1";
-const access_token = localStorage.getItem("accessToken");
+
 
 const AddProduct = ({ products }: any) => {
   const { title, unitPrice, hasOffer, images, id } = products;
@@ -14,18 +14,21 @@ const AddProduct = ({ products }: any) => {
   const [message, setMessage] = useState("");
 
   const addItem = async () => {
-    try {
+    
       const body = {
         productId: id,
         priceId: unitPrice[0].id,
         quantity: 1,
         note: "test",
       };
-      if (access_token) {
+
+      const accessToken = localStorage.getItem("accessToken");
+      if(accessToken){
+        try{
         let response = await fetch(`${baseURL}/api/v4/cart-product`, {
           method: "POST",
           headers: {
-            Authorization: `Bearer ${access_token}`,
+            Authorization: `Bearer ${accessToken}`,
             "Warehouse-Id": warehouseId,
             "Api-key": apiKey,
             "Content-Type": "application/json",
@@ -38,11 +41,12 @@ const AddProduct = ({ products }: any) => {
           setMessage("Item added to cart");
           alert("Item added to cart");
         }
-      } else {
-        navigate("/login");
+     } catch(err){
+        console.log(err);
       }
-    } catch (err) {
-      console.log(err);
+    }else{
+         navigate("/login")
+         alert("pls login");
     }
   };
   return (
