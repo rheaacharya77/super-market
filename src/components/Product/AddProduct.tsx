@@ -46,7 +46,7 @@ const AddProduct = ({ products }: any) => {
       }
     }else{
          navigate("/login")
-         alert("pls login");
+         alert("You need to login first");
     }
   };
   return (

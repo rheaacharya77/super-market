@@ -3,12 +3,13 @@ import { Link,useNavigate} from "react-router-dom";
 import { Form } from "react-bootstrap";
 import "../../assets/style/Login.css";
 
-const clientId = 2;
+const clientId = process.env.REACT_APP_CLIENT_ID;
+const clientSecret = process.env.REACT_APP_CLIENT_SECRET;
+
 const warehouseId = "1";
 const auth = "api/v4/auth";
 const grantTtype = "password";
 const baseURL = "https://uat.ordering-dalle.ekbana.net/";
-const clientSecret = "olzBb6we0po4B0PSJyDpNGhhSsnvZmeio8sRoASa";
 const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
 
 
