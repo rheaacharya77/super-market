@@ -3,8 +3,8 @@ import { Link,useNavigate} from "react-router-dom";
 import { Form } from "react-bootstrap";
 import "../../assets/style/Login.css";
 
-const clientId = process.env.REACT_APP_CLIENT_ID;
-const clientSecret = process.env.REACT_APP_CLIENT_SECRET;
+const clientId = 2;
+const clientSecret = "olzBb6we0po4B0PSJyDpNGhhSsnvZmeio8sRoASa";
 
 const warehouseId = "1";
 const auth = "api/v4/auth";
@@ -46,7 +46,7 @@ const LoginForm = () => {
       let newData = await response.json();
       console.log(newData);
 
-      if (response.status === 200) {
+      if (newData.expires_in) {
         setMessage("Login Successful!");
         alert("Login Successful");
         navigate('/');
