@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Accordion, Nav } from "react-bootstrap";
+import { Accordion,Nav} from "react-bootstrap";
 function FaqContainer() {
   const Questions = [
     {

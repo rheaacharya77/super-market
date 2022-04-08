@@ -23,9 +23,11 @@ const Featured = () => {
       },
     });
     const newData = await response.json();
+    if(response.status === 200){
     setProducts(newData.data);
     setLoading(false);
     console.log(newData.data);
+    }
   };
 
   useEffect(() => {

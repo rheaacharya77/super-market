@@ -29,9 +29,11 @@ const CategoryDisplay = ({categoryid }: Props) => {
     );
     let newData = await response.json();
     //  console.log(newData.data);
+    if(response.status === 200){
     setProducts(newData.data);
     // console.log(productsbycategory);
     setLoading(false);
+    }
   };
 
   useEffect(() => {
