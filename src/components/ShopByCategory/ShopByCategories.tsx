@@ -41,7 +41,7 @@ const ShopByCategory = () => {
       <div className="category-section">
         <div className="container">
           <div className="category-sectiontitle">
-            <h2 className="category-header">SHOP BY CATEGORY</h2>
+            <h3>SHOP BY CATEGORY</h3>
           </div>
           <div className="row">
             {displaycategory &&

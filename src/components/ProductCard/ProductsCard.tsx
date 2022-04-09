@@ -7,6 +7,7 @@ const ProductsCard = ({ products }: any) => {
   //pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(9);
+  
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   // const currentPosts = products.slice(indexOfFirstPost, indexOfLastPost);

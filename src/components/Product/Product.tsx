@@ -4,6 +4,7 @@ import {Spinner } from "react-bootstrap";
 import ProductContainer from "./ProductContainer";
 import { ProductInterface } from "../../types/products";
 import "../../assets/style/Product.css";
+import Topselling from "../Topselling/Topselling";
 // import offer from "../../assets/images/offer.png";
 
 const baseURL = "https://uat.ordering-dalle.ekbana.net/";
@@ -44,7 +45,7 @@ const Product = () => {
   }
   return (
     <>
-    <ProductContainer products={products} />       
+    <ProductContainer products={products} />   
     </>
   );
 };
