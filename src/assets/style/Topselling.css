@@ -1,190 +1,86 @@
 .top-brands {
-    padding: 5em 0;
-    background: #fff
-  }
-  
-  .agile_top_brands_grids {
-    margin-top: 40px;
-  }
-  
-  .tab-content {
-    padding: 40px 40px;
-    color: black;
-  }
-  
-  .grid_3.grid_5 {
-    margin-top: 5em;
-    border: 1px solid #bebebe;
-  }
-  
-  .nav-tabs > li {
-    width: 50%;
-  }
-  .nav-tabs > li > a {
-    margin: 0 0px;
-    padding: 10px 53px;
-    line-height: 1.42857143;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: 0px solid transparent;
-    border-radius: 0px 0px 0 0;
-    color: #016773;
-  }
-  .nav-tabs > li > a:hover,
-  .nav > li > a:focus {
-    text-decoration: none;
-    background: #fe9126;
-    color: #fff;
-    border: 0px solid transparent;
-  }
-  .nav-tabs > li.active > a,
-  .nav-tabs > li.active > a:hover,
-  .nav-tabs > li.active > a:focus {
-    color: #fff;
-    background: #fe9126;
-    border: 0px solid transparent;
-  }
-  .nav-tabs {
-    border-bottom: 1px solid #fff;
-  }
-  
-  @media (max-width: 320px) {
-    .nav-tabs > li > a {
-      font-size: 12px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .nav-tabs > li > a {
-      font-size: 14px;
-    }
-  }
-  .top-header {
-    background-color: #333333;
-    height: 58px;
-    text-align: center;
-  }
-  
-  .text-white {
-    color: white;
-  }
-  
-  .top-header-account li a {
-    text-decoration: none;
-    padding-left: 10px;
-  }
-  
-  .top-header-account li {
-    list-style: none;
-  }
-  .top-header-account {
-    display: inline-flex;
-  }
-  
-  .top-header-p a {
-    text-decoration: none;
-    color: #fd7e14;
-  }
+  padding: 5em 0;
+  background: #fff;
+}
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 500px;
-    height: 300px;
-    background: #f1f1f1;
-    margin: 100px auto 0;
-    word-break: break-all;
-    border: 1px solid rgba(0, 0, 0, 0.274);
-  }
+.grid_3.grid_5 {
+  margin-top: 5em;
+  border: 1px solid #bebebe;
+}
 
-  body {
-    background: #fff;
-  }
+.nav-tabs > li {
+  width: 50%;
+}
+
+.text-white {
+  color: white;
+}
+
+body {
+  background: #fff;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+  background: #fd7e14;
+  border-bottom: 1px solid transparent;
   
+}
+.active-tabs p {
+  color:#fff;
+}
 
-
-  .bloc-tabs {
-    display: flex;
-  }
-
-
-  .tabs {
-  
-    padding: 15px;
-    text-align: center;
-    width: 50%;
-    background: rgba(128, 128, 128, 0.075);
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-    box-sizing: content-box;
-    position: relative;
-    outline: none;
-  }
-  .tabs:not(:last-child){
-    border-right: 1px solid rgba(0, 0, 0, 0.274);
-  }
-  
-  .active-tabs  {
-    background: white;
-    border-bottom: 1px solid transparent;
-  }
-
-
-   
-  .active-tabs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 5px;
-    background: rgb(88, 147, 241);
-  }
-  button {
-    border: none;
-    
-  }
-  .content-tabs {
-    flex-grow : 1;
-  }
-
-  .content {
-    background: white;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: none;
-  }
-
-  .content h2 {
-    padding: 0px 0 5px 0px;
-  }
-  .content hr {
-    width: 100px;
-    height: 2px;
-    background: #222;
-    margin-bottom: 5px;
-  }
-  
-  
-  .content p {
-    width: 100%;
-    height: 100%;
-  }
-  .active-content {
-    display: block;
-  } 
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+}
+button {
+  border: none;
+}
+button p,a,link{
+  font-weight: bold;
+  color:#212121;
+  font-size: 18px;
  
-  
- 
- 
-  
-  
- 
-  
- 
+}
+
+.content-tabs {
+  flex-grow: 1;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+
+.active-content {
+  display: block;
+}

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/style/Topselling.css";
-import { Container, Tabs, Tab, Row, Spinner } from "react-bootstrap";
+import { Container, Row, Spinner } from "react-bootstrap";
 import { ProductInterface } from "../../types/products";
 import AddProduct from "../Product/AddProduct";
-import { Link } from "react-router-dom";
 
 const baseURL = "https://uat.ordering-dalle.ekbana.net/";
 const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
@@ -13,8 +12,6 @@ const Topselling = () => {
   const [products, setProducts] = useState<ProductInterface[]>([]);
   const [loading, setLoading] = useState(true);
   const [toggleState, setToggleState] = useState(1);
-  const [key, setKey] = useState("ENJOY OUR NEW DISHES");
-  const [key1] = useState("TODAYS HOT DEAL");
 
   const getData = async () => {
     const response = await fetch(`${baseURL}/api/v4/product`, {
@@ -58,18 +55,17 @@ const Topselling = () => {
               className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(1)}
             >
-              SUPER SAVER PACK
+              <p>SUPER SAVER PACK</p>
             </button>
             <button
               className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(2)}
             >
-              COMBO PACK
+              <p>COMBO PACK</p>
             </button>
           </div>
 
           <Container>
-            {/* <div className="agile_top_brands_grids"> */}
             <div
               className={
                 toggleState === 1 ? "content  active-content" : "content"
@@ -91,7 +87,6 @@ const Topselling = () => {
           </Container>
 
           <Container>
-            {/* <div className="agile_top_brands_grids"> */}
 
             <div
               className={

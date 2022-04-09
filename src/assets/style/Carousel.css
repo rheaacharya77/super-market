@@ -27,12 +27,22 @@
 .animated1 {
   margin-bottom: 180px;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 44px;
   font-family: Lobster,cursive;
   line-height: 1;
   font-style: italic;
+  margin-left: 10px;
 }
 .slider-animated-1 .animated1{
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-control-next-icon {
+  display:none;
 }

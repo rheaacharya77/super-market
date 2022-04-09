@@ -45,7 +45,7 @@ const Product = () => {
   }
   return (
     <>
-    <ProductContainer products={products} />   
+    <ProductContainer products={products} />  
     </>
   );
 };
