@@ -590,7 +590,7 @@ ol li {
 }
 
 .w3ls_logo_products_left h1 a {
-  /* font-size: 40px; */
+  font-size: 40px; 
   color: #fe9126;
   text-decoration: none;
   text-transform: uppercase;
@@ -601,6 +601,10 @@ ol li {
   margin-top: 7px;
 }
 
+ul.phone_icon li  {
+  font-size: 16px; 
+
+}
 .w3l_offers p a {
   color: #fe9126;
   text-decoration: none;
