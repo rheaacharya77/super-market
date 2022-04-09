@@ -102,7 +102,7 @@ const Topselling = () => {
                 {products &&
                   products.slice(24, 30).map((product: any) => {
                     return (
-                      <div className="col-md-3 top_brand_left" key={product.id}>
+                      <div className="col-md-3 col-sm-12 p-3" key={product.id}>
                         <AddProduct products={product} key={product.id} />
                       </div>
                     );
