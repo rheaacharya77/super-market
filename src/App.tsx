@@ -11,6 +11,7 @@ import ScrollButton from "./components/ScrollButton/ScrollButton";
 import ForgotPassword from "./components/Login/ForgotPassword";
 
 
+
 import Faq from "./pages/Faq";
 import Momo from "./pages/Momo";
 import Home from "./pages/Home";
@@ -18,6 +19,7 @@ import Help from "./pages/Help";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Snacks from "./pages/Snacks";
+import CartItems from "./pages/Cart";
 import Aboutus from "./pages/AboutUs";
 import Products from "./pages/Product";
 import Signature from "./pages/Signature";
@@ -51,6 +53,7 @@ function App() {
           <Route path="/signature" element={<Signature />} />
           <Route path="/faqs" element={<Faq />} />
           <Route path="/forgotpassword" element={<ForgotPassword/>}/>
+          <Route path="/checkout" element={<CartItems/>}/>
         </Routes>
         <Footer />
       </Router>
