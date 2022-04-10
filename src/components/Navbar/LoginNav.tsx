@@ -1,5 +1,5 @@
   import React ,{useState} from "react";
-import { Link,NavLink} from "react-router-dom";
+import { Link} from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -31,25 +31,25 @@ const LoginNav = () => {
             { accessToken === null ? (
             <>
             <li>
-              <NavLink to="/register">CREATE ACCOUNT</NavLink>
+              <Link to="/register">CREATE ACCOUNT</Link>
             </li>
             <li>
-               <NavLink to="/login"> LOGIN </NavLink> 
+               <Link to="/login"> LOGIN </Link> 
             </li>
            
             </>
              ): ( <>
                <li>
-              <NavLink to="/profile">PROFILE</NavLink>
+              <Link to="/profile">PROFILE</Link>
             </li>
               <li>
-                <NavLink to="/" onClick={() => {logoutHandler()}}> LOGOUT </NavLink>
+                <Link to="/" onClick={() => {logoutHandler()}}> LOGOUT </Link>
               </li>
             
               </>
                ) }
              <li>
-              <NavLink to="/contact">HELP</NavLink>
+              <Link to="/contact">HELP</Link>
             </li>
           </ul>
         </div>

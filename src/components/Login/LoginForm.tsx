@@ -49,7 +49,7 @@ const LoginForm = () => {
       if (newData.expires_in) {
         setMessage("Login Successful!");
         alert("Login Successful");
-        navigate('/');
+        window.location.href = "/";
         localStorage.setItem('accessToken', newData.access_token);
       } else {
         setError(newData.errors[0].message);
