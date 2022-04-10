@@ -1,5 +1,5 @@
   import React ,{useState} from "react";
-import { Link} from "react-router-dom";
+import { Link,NavLink} from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -7,16 +7,15 @@ import {useNavigate} from "react-router-dom"
 import "../../assets/style/Navbar.css";
 
 
-const accessToken = localStorage.getItem("accessToken");
+
 const LoginNav = () => {
-  const[isLoggedin,setIsLoggedin] = useState(false);
+  const accessToken = localStorage.getItem("accessToken");
   const navigate = useNavigate();
 
 
   const logoutHandler = () =>{
     localStorage.clear();
     navigate("/");
-    setIsLoggedin(false);
   }
  
   return (
@@ -29,33 +28,29 @@ const LoginNav = () => {
         </div>
         <div className="agile-login">
           <ul>
-            { !isLoggedin ? (
+            { accessToken === null ? (
             <>
             <li>
-              <Link to="/register">CREATE ACCOUNT</Link>
+              <NavLink to="/register">CREATE ACCOUNT</NavLink>
             </li>
             <li>
-               <Link to="/login" onClick={()=> {setIsLoggedin(true)}}> {/* */} LOGIN </Link> 
+               <NavLink to="/login"> LOGIN </NavLink> 
             </li>
-            <li>
-              <Link to="/contact">HELP</Link>
-            </li>
+           
             </>
-             ): 
-              
-           ( <>
+             ): ( <>
                <li>
-              <Link to="/register">CREATE ACCOUNT</Link>
+              <NavLink to="/profile">PROFILE</NavLink>
             </li>
               <li>
-                <Link to="/" onClick={() => {logoutHandler()}}> LOGOUT </Link>
+                <NavLink to="/" onClick={() => {logoutHandler()}}> LOGOUT </NavLink>
               </li>
-              <li>
-              <Link to="/contact">HELP</Link>
-            </li>
+            
               </>
                ) }
-            
+             <li>
+              <NavLink to="/contact">HELP</NavLink>
+            </li>
           </ul>
         </div>
         <div className="product_list_header">

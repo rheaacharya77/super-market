@@ -24,6 +24,7 @@ const Cart = () => {
     let newData = await response.json();
     if (response.status === 200) {
       setCartItem([newData.data]);
+      console.log(newData.data);
     }
   };
 

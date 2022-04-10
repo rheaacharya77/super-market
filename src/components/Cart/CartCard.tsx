@@ -9,7 +9,7 @@ const warehouseId = "1";
 const accessToken = localStorage.getItem("accessToken");
 
 const CartCard = ({item,i}:any) => {
-
+   console.log(item);
     return (
         <>
         <tr className="rem1">
@@ -45,8 +45,8 @@ const CartCard = ({item,i}:any) => {
                 </div>
             </td>
             <td className="invert">{item.product?.title}</td>
-            <td className="invert">NRs. {item.selectedUnit?.sellingPrice}</td>
-            <td className="invert">NRs. {item.price}</td>
+            <td className="invert">Rs. {item.selectedUnit?.sellingPrice}</td>
+            <td className="invert">Rs. {item.price}</td>
             <td className="invert">
                 <Button variant="danger">
                     <FontAwesomeIcon icon={faTrash} />

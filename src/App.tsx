@@ -53,7 +53,7 @@ function App() {
           <Route path="/signature" element={<Signature />} />
           <Route path="/faqs" element={<Faq />} />
           <Route path="/forgotpassword" element={<ForgotPassword/>}/>
-          <Route path="/checkout" element={<CartItems/>}/>
+          <Route path="/cart" element={<CartItems/>}/>
         </Routes>
         <Footer />
       </Router>
