@@ -7,9 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import ScrollButton from "./components/ScrollButton/ScrollButton";
 import ForgotPassword from "./components/Login/ForgotPassword";
-
+import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 
 import Faq from "./pages/Faq";
@@ -22,14 +21,12 @@ import Snacks from "./pages/Snacks";
 import CartItems from "./pages/Cart";
 import Aboutus from "./pages/AboutUs";
 import Products from "./pages/Product";
+import MyProfile from "./pages/Profile";
 import Signature from "./pages/Signature";
 import Dallemomos from "./pages/Dallemomos";
 import Signatures from "./pages/Signatures";
 import Frozenitems from "./pages/Frozenitems";
 import Riceandnoodles from "./pages/Riceandnoodles";
-
-
-
 
 
 function App() {
@@ -42,6 +39,7 @@ function App() {
           <Route path="/products" element={<Products/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Signup />} />
+          <Route path="/profile" element={<MyProfile/>}/>
           <Route path="/contact" element={<Help />} />
           <Route path="/aboutus" element={<Aboutus/>}/>
           <Route path="/signatures" element={<Signatures />} />
