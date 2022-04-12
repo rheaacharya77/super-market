@@ -15,9 +15,9 @@ const CartCard = ({item,i}:any) => {
         <tr className="rem1">
             <td className="invert">{i}</td>
             <td className="invert-image">
-                <a href={item.product?.images[0].imageName} target="__blank">
+                <a href={item.cartProducts[i].product?.images[0].imageName} target="__blank">
                     <img
-                        src={item.product?.images[0].imageName}
+                        src={item.cartProducts[i].product?.images[0].imageName}
                         alt=" "
                         className="img-responsive"
                     />
@@ -44,9 +44,9 @@ const CartCard = ({item,i}:any) => {
                     </div>
                 </div>
             </td>
-            <td className="invert">{item.product?.title}</td>
-            <td className="invert">Rs. {item.selectedUnit?.sellingPrice}</td>
-            <td className="invert">Rs. {item.price}</td>
+            <td className="invert">{item.cartProducts[i].product?.title}</td>
+            <td className="invert">Rs. {item.cartProducts[i].selectedUnit?.sellingPrice}</td>
+            <td className="invert">Rs. {item.cartProducts[i].price}</td>
             <td className="invert">
                 <Button variant="danger">
                     <FontAwesomeIcon icon={faTrash} />

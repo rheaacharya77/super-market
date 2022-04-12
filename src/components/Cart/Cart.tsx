@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { GetCartData } from "../../types/cart";
 import CartCard from "./CartCard";
 
 const baseURL = "https://uat.ordering-dalle.ekbana.net";
@@ -9,7 +10,7 @@ const warehouseId = "1";
 const accessToken = localStorage.getItem("accessToken");
 
 const Cart = () => {
-  const [cartItem, setCartItem] = useState<any[]>([]);
+  const [cartItem, setCartItem] = useState<GetCartData[]>([]);
 
   const getData = async () => {
     let response = await fetch(`${baseURL}/api/v4/cart`, {
@@ -40,7 +41,8 @@ const Cart = () => {
     <div className="checkout">
       <Container>
         <h2>
-          Your shopping cart contains: <span>{cartItem.length} Product(s)</span>
+          Your shopping cart contains:{" "}
+          <span>{cartItem.length} Product(s)</span>
         </h2>
         <div className="checkout-right">
           <table className="timetable_sub">
@@ -56,9 +58,9 @@ const Cart = () => {
               </tr>
             </thead>
             <tbody>
-              {cartItem && cartItem.map((item, i) => {
-                return <CartCard item={item} i={i + 1} key={item.id}  />;
-              })}
+              {cartItem.map((item, i) => {
+                  return <CartCard item={item} i={i + 1} key={item.id} />;
+                })}
             </tbody>
           </table>
         </div>
@@ -66,7 +68,6 @@ const Cart = () => {
           <div className="checkout-left-basket">
             <h4>Continue to basket</h4>
             <ul>
-             
               <li>
                 Sub Total <i>-</i>{" "}
               </li>
